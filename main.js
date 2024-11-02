@@ -7,7 +7,7 @@ let fact = document.querySelector("#fact");
 async function fetchQuote() {
     try {
         // Using a CORS proxy to fetch the quote
-        const response = await fetch('https://thingproxy.freeboard.io/fetch/https://zenquotes.io/api/random');
+        const response = await fetch('https://zenquotes.io/api/random');
 
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
